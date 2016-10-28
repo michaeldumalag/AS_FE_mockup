@@ -14,3 +14,11 @@
 //= require jquery_ujs
 //= require 'bootstrap-sass-official'
 //= require_tree .
+
+(function(){
+  var windowHeight = $(window).height.toString() + "px";
+
+  $(window).on("resize", function(){
+    $(".person").css({"height": windowHeight});
+  });
+});
