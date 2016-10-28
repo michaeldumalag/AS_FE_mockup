@@ -14,6 +14,10 @@
  *= require_tree .
  *= require_self
  */
+html, body {
+  height: 100%;
+  overflow: auto;
+}
 
 .person {
   height: 700px;
@@ -24,6 +28,16 @@
 }
 
 .as-sidebar {
+  overflow: auto;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  font-size: 125%;
+
+  div .container {
+    width: auto;
+  }
+
   img {
     width: 350px;
   }
@@ -33,6 +47,9 @@
   }
 
   .green-box {
+    position: absolute;
+    width: 99%;
+    right:0;
     background-color: limegreen;
     color: white;
   }
